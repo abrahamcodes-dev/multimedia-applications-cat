@@ -1,22 +1,31 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Multimedia Applications CAT</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save Our Wildlife</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <h1>Welcome to Multimedia Applications CAT</h1>
+    <main class="container">
+        <h1>Save Our Wildlife</h1>
 
-    <p>This project demonstrates separation of content using HTML, CSS and JavaScript.</p>
+        <video id="wildlifeVideo" controls aria-label="Promotional wildlife conservation video">
+            <source src="wildlife.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
 
-    <button onclick="showMessage()">Click Me</button>
+        <p>
+            Wildlife plays an important role in maintaining balance in nature.
+            Protecting animals and their habitats helps preserve biodiversity for future generations.
+        </p>
+
+        <button id="videoButton" aria-label="Play or hide wildlife video">
+            Play / Hide Video
+        </button>
+    </main>
 
     <script src="script.js"></script>
-
 </body>
-
 </html>
